@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-mona: ;
+  --font-mona: var(--font-mona), system-ui, sans-serif;
+  --font-pixel: var(--font-pixel), system-ui, sans-serif;
 }
 
 body {
