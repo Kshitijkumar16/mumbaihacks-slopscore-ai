@@ -24,7 +24,7 @@ const MainComponent = () => {
 
       <div className="mt-[48px]">
         <div className="flex flex-col justify-center items-center">
-          <p className="font-pixel whitespace-nowrap text-[16px] text-white/40">
+          <p className="font-pixel whitespace-nowrap text-[40px] text-white">
             LOOK BEFORE YOU LEAP
           </p>
           <p className="font-mona whitespace-nowrap text-[16px] text-white/40">
