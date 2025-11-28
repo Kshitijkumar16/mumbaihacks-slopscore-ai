@@ -32,6 +32,37 @@ const MainComponent = () => {
           </p>
         </div>
       </div>
+
+      <div className="mt-[60px] flex justify-between">
+        <div className="">
+          {/* <Form {...form}>
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+              <FormField
+                control={form.control}
+                name="video_link"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl className="p-text placeholder:p-text mt-8 h-12 max-w-[440px] bg-white/80 font-semibold text-black placeholder:text-black/50 focus:ring-0">
+                      <Input
+                        placeholder="https://youtube.com/..."
+                        {...field}
+                        autoComplete="off"
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <Button
+                type="submit"
+                className="bg-arancia hover:text-arancia border-arancia h-11 w-64 cursor-pointer border text-white hover:bg-white active:bg-black"
+              >
+                <p className="p-text font-semibold">Analyse</p>
+              </Button>
+            </form>
+          </Form> */}
+        </div>
+      </div>
     </div>
   );
 };
