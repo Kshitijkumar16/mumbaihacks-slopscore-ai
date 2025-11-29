@@ -2,9 +2,12 @@ import { icons } from "@/constants";
 import { ArrowDown, ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+
+import { usePathname } from "next/navigation";
 
 const Sidebar = () => {
+  const pathname = usePathname();
+
   return (
     <div className="h-screen flex flex-col justify-between">
       <p className="text-[24px] font-pixel text-white py-[16px] shrink-0">
@@ -30,7 +33,10 @@ const Sidebar = () => {
 
       {/* links */}
       <div className="mt-[28px] shrink-0 flex flex-col gap-y-[12px]">
-        <Link href={"/"} className="">
+        <Link
+          href={"/"}
+          className={pathname === "/" ? "opacity-100" : "opacity-40"}
+        >
           <div className="gap-x-[16px] flex items-center">
             <Image
               src={icons.speedometer}
@@ -40,13 +46,19 @@ const Sidebar = () => {
             <p className="text-white font-mona">Dashboard</p>
           </div>
         </Link>
-        <Link href={"/mission"} className="">
+        <Link
+          href={"/mission"}
+          className={pathname === "/mission" ? "opacity-100" : "opacity-40"}
+        >
           <div className="gap-x-[16px] flex items-center">
             <Image src={icons.flag} alt="" className="text-white size-[16px]" />
             <p className="text-white font-mona">Our mission</p>
           </div>
         </Link>
-        <Link href={"/agents"} className="">
+        <Link
+          href={"/agents"}
+          className={pathname === "/agents" ? "opacity-100" : "opacity-40"}
+        >
           <div className="gap-x-[16px] flex items-center">
             <Image
               src={icons.ninjaStar}
@@ -56,10 +68,19 @@ const Sidebar = () => {
             <p className="text-white font-mona">AI Agents</p>
           </div>
         </Link>
-        <div className="gap-x-[16px] flex items-center">
-          <Image src={icons.target} alt="" className="text-white size-[16px]" />
-          <p className="text-white font-mona">MVP Scope</p>
-        </div>
+        <Link
+          href={"/mvp-scope"}
+          className={pathname === "/mvp-scope" ? "opacity-100" : "opacity-40"}
+        >
+          <div className="gap-x-[16px] flex items-center">
+            <Image
+              src={icons.target}
+              alt=""
+              className="text-white size-[16px]"
+            />
+            <p className="text-white font-mona">MVP Scope</p>
+          </div>
+        </Link>
       </div>
       {/* agents workflow */}
       {/* <div className="mt-[32px] h-full">
