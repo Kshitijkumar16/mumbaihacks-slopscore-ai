@@ -201,7 +201,7 @@ const MainComponent = () => {
         )}
         {!response && !loading && (
           <div className="h-full flex items-center justify-center text-white/20 font-mona">
-            Results will appear here
+            unfortunately the deployment is breaking, but the solution works completely fine in local. Please check the repo to test it out! 
           </div>
         )}
       </div>
