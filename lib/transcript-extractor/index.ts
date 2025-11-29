@@ -65,7 +65,7 @@ export const extractCaptionTrackUrl = (
 
 // Get player response from YouTube's API
 export const getPlayerResponse = async (videoId: string, apiKey: string) => {
-  const endpoint = `https://www.youtube.com/youtubei/v1/player?key=${apiKey}`;
+  const endpoint = `https://www.youtube.com/youtubei/v1/player?key=${apiKey}&email='kshitijkumar1610@gmail.com'`;
 
   const body = {
     context: {

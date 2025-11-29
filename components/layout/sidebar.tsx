@@ -97,59 +97,20 @@ const Sidebar = () => {
       <div className="h-full"></div>
 
       {/* See videos button */}
-      <div className="mt-[32px] flex gap-x-[12px]">
-        <button className="h-[36px] px-[12px] bg-white rounded-[12px] flex items-center justify-center w-full">
-          <p className="text-black font-mona text-[13px] font-medium whitespace-nowrap">
-            See videos we've tested so far
-          </p>
-        </button>
-        <div className="h-[36px] w-[36px] rounded-[12px] border border-white/20 flex items-center justify-center shrink-0">
-          <ArrowDown className="text-white size-[20px] stroke-1" />
-        </div>
-      </div>
+      <div className="mt-[32px] flex gap-x-[12px]"></div>
 
       {/* Team Section */}
       <div className="mt-[28px]">
-        <div className="flex justify-between items-center mb-[12px]">
-          <div className="flex items-center gap-x-[12px]">
-            <Image
-              src={icons.group}
-              alt=""
-              className="text-white size-[20px]"
-            />
-            <p className="text-[16px] text-white font-mona">Team</p>
-          </div>
-          <div className="flex gap-x-[16px]">
-            <ArrowLeft className="text-white/40 size-[20px]" />
-            <ArrowRight className="text-white/40 size-[20px]" />
-          </div>
-        </div>
+        <div className="flex justify-between items-center mb-[12px]"></div>
 
         <div className="w-full h-[1px] bg-white/20 mb-[24px]" />
 
         {/* Profile Card */}
-        <div className="flex items-center gap-x-[16px]">
-          <div className="h-[40px] w-[40px] rounded-full overflow-hidden bg-gray-500 shrink-0 relative">
-            {/* Placeholder for profile image */}
-            <Image
-              src={icons.devfolio}
-              alt="Rayna Mayya"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div>
-            <p className="text-white font-mona text-[15px]">Anish Tilloo</p>
-            <p className="whitespace-nowrap text-white/60 font-mona text-[14px]">
-              Full stack dev at Claim Genius
-            </p>
-          </div>
-        </div>
+        <div className="flex items-center gap-x-[16px]"></div>
 
         <div className="w-full h-[1px] bg-white/20 mt-[24px] mb-[24px]" />
 
         <p className="text-white/60 font-mona text-[14px] leading-[160%]">
-          Design tailored to showcase our MVP. <br />
           Current goal: Get selected in Top 5.
         </p>
       </div>
